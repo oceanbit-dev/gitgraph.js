@@ -28,14 +28,17 @@
   },
   "devDependencies": {
     "gh-pages": "2.0.1",
-    "mdx-deck": "git://github.com/nicoespeon/mdx-deck.git#gitgraphjs-custom-build",
-    "mdx-deck-code-surfer": "0.5.5",
+    "@emotion/react": "^11.1.1",
+    "mdx-deck": "^4.1.1",
+    "@mdx-deck/themes": "^4.1.0",
+    "code-surfer": "^3.1.1",
+    "@code-surfer/themes": "^3.1.1",
     "prism-react-renderer": "0.1.6",
     "raw-loader": "0.5.1",
     "react": "16.8.4",
     "react-dom": "16.8.4",
     "react-github-corner": "2.3.0",
-    "react-syntax-highlighter": "10.2.1",
+    "react-syntax-highlighter": "^15.3.1",
     "styled-components": "4.2.0",
     "webpack-node-externals": "1.7.2"
   }

@@ -1,7 +1,9 @@
-import { Head, Image } from "mdx-deck";
-import { Invert, Split } from "mdx-deck/layouts";
+import { Head, Image, Header, Invert, Split } from "mdx-deck";
 
 import { BasicUsageResult, BasicScenario } from "./components/Examples";
+import GithubCorner from "react-github-corner";
+
+import myTheme, { GlobalCSS } from "./theme";
 
 <Head>
   <title>GitGraph.js</title>
@@ -12,13 +14,28 @@ import { BasicUsageResult, BasicScenario } from "./components/Examples";
     name="twitter:description"
     content="A JavaScript library to draw pretty git graphs."
   />
-  <meta name="twitter:image" content="https://gitgraphjs.com/assets/gitgraph-logo.png" />
-  <meta name="og:image" content="https://gitgraphjs.com/assets/gitgraph-logo.png" />
+  <meta
+    name="twitter:image"
+    content="https://gitgraphjs.com/assets/gitgraph-logo.png"
+  />
+  <meta
+    name="og:image"
+    content="https://gitgraphjs.com/assets/gitgraph-logo.png"
+  />
   <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 </Head>
 <h1 className="sr-only">GitGraph.js</h1>
 
-export { default as theme } from "./theme";
+export const theme = myTheme;
+
+<GlobalCSS />
+
+<Header>
+
+{" "}
+<GithubCorner href="https://github.com/nicoespeon/gitgraph.js/" />
+
+</Header>
 
 ![](./assets/gitgraph-logo.png)
 

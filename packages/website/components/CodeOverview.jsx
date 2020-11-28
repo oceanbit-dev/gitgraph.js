@@ -1,5 +1,5 @@
 import React from "react";
-import { CodeSurfer } from "mdx-deck-code-surfer";
+import { CodeSurfer } from "code-surfer";
 
 import theme from "../theme";
 
@@ -38,7 +38,7 @@ function BasicUsage(props) {
 function TitleH2(props) {
   return (
     <h2
-      style={{ color: theme.colors.text, fontSize: theme.fontSizes[3] }}
+      style={{ color: theme.colors.text }}
       dangerouslySetInnerHTML={{ __html: parseHtml(props.text) }}
     />
   );
@@ -47,7 +47,7 @@ function TitleH2(props) {
 function TitleH3(props) {
   return (
     <h3
-      style={{ color: theme.colors.text, fontSize: theme.fontSizes[2] }}
+      style={{ color: theme.colors.text }}
       dangerouslySetInnerHTML={{ __html: parseHtml(props.text) }}
     />
   );
